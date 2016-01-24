@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsReYear" targetNamespace="http://tempuri.org/dsReYear.xsd" xmlns:mstns="http://tempuri.org/dsReYear.xsd" xmlns="http://tempuri.org/dsReYear.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="3" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Database5" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database5 (MySettings)" PropertyReference="ApplicationSettings.My.MySettings.GlobalReference.Default.Database5" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Database5ConnectionString2" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database5ConnectionString2 (MySettings)" PropertyReference="ApplicationSettings.My.MySettings.GlobalReference.Default.Database5ConnectionString2" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Database5ConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database5ConnectionString1 (MySettings)" PropertyReference="ApplicationSettings.My.MySettings.GlobalReference.Default.Database5ConnectionString1" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" PropertyReference="ApplicationSettings.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsReYear" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsReYear" msprop:Generator_UserDSName="dsReYear">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtReYear" msprop:Generator_TableClassName="dtReYearDataTable" msprop:Generator_TableVarName="tabledtReYear" msprop:Generator_RowChangedName="dtReYearRowChanged" msprop:Generator_TablePropName="dtReYear" msprop:Generator_RowDeletingName="dtReYearRowDeleting" msprop:Generator_RowChangingName="dtReYearRowChanging" msprop:Generator_RowEvHandlerName="dtReYearRowChangeEventHandler" msprop:Generator_RowDeletedName="dtReYearRowDeleted" msprop:Generator_RowClassName="dtReYearRow" msprop:Generator_UserTableName="dtReYear" msprop:Generator_RowEvArgName="dtReYearRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="job_month" msprop:Generator_ColumnVarNameInTable="columnjob_month" msprop:Generator_ColumnPropNameInRow="job_month" msprop:Generator_ColumnPropNameInTable="job_monthColumn" msprop:Generator_UserColumnName="job_month" type="xs:int" minOccurs="0" />
+              <xs:element name="job_sum" msprop:Generator_ColumnVarNameInTable="columnjob_sum" msprop:Generator_ColumnPropNameInRow="job_sum" msprop:Generator_ColumnPropNameInTable="job_sumColumn" msprop:Generator_UserColumnName="job_sum" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,93 @@
+﻿SET FOREIGN_KEY_CHECKS=0;
+
+DROP DATABASE CDTH
+
+CREATE DATABASE CDTH
+
+DROP TABLE IF EXISTS `customer`;
+CREATE TABLE `customer` (
+  `Cus_Id` int(11) NOT NULL,
+  `Cus_Name` varchar(255) DEFAULT NULL,
+  `Cus_Address` varchar(255) DEFAULT NULL,
+  `Cus_Gov` varchar(255) DEFAULT NULL,
+  `Cus_Tel` varchar(255) DEFAULT NULL,
+  `Cus_Email` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Cus_Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `customer` VALUES ('4', 'ปรีดา วิชัย', 'อ.หงาว จ.ระนอง', 'วิทยาลัยเทคนิคระนอง', '08-12323232', 'fofun@gmail.com');
+INSERT INTO `customer` VALUES ('6', 'แววดาว แสงพราว', 'อ.สุขสำราญ จ.ระนอง', 'อบต.สุขสำราญ', '08-15438799', 'style@hotmail.com');
+INSERT INTO `customer` VALUES ('8', 'ปกรณ์ สุขใจ', '8/1 ม.5 ต.บางริ้น อ.เมือง จ.ระนอง', 'เทศบาลเมืองระนอง', '08-78896541', 'pakon@hotmail.com');
+INSERT INTO `customer` VALUES ('9', 'กติกา ดวงดี', 'ระนอง', 'บางริ้น', '08-67315808', 'rung@gail.com');
+INSERT INTO `customer` VALUES ('10', 'สหาย จงรัก', 'ระนอง', 'บางริ้น', '08-86310999', 'jongruk@hotmail.com');
+INSERT INTO `customer` VALUES ('11', 'หรรษา มากาย', 'ระนอง', 'เทศบาลระนอง', '08-87462099', 'hunsa@gmail.com');
+
+
+DROP TABLE IF EXISTS `employee`;
+CREATE TABLE `employee` (
+  `Emp_Id` int(11) NOT NULL,
+  `Emp_Name` varchar(255) DEFAULT NULL,
+  `Emp_Address` varchar(255) DEFAULT NULL,
+  `Emp_Tel` varchar(255) DEFAULT NULL,
+  `Emp_Position` varchar(255) DEFAULT NULL,
+  `Emp_Salary` double DEFAULT NULL,
+  PRIMARY KEY (`Emp_Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `employee` VALUES ('8', 'สุฑิตา แซ่อุ่ย', ' 8/10 ม.1 ต.บางริ้น อ.เมือง จ.ระนอง', '08-48423957', 'พนักงานออกแบบ', '11000');
+INSERT INTO `employee` VALUES ('9', 'ณัฐนรี บุญญารัตน์', 'อ.เมือง จ.ระนอง', '08-66734523', 'พนักงานออกแบบ', '11000');
+INSERT INTO `employee` VALUES ('10', 'กังสชิต กรเกษม', '777 ม.1 ต.บางริ้น อ.เมือง จ.ระนอง', '08-58889999', 'ช่างเครื่อง', '8900');
+INSERT INTO `employee` VALUES ('11', 'พงศธร โชติมณีโรจน์', 'พ่อตาขิง ระนอง', '08-00034335', 'เจ้าของกิจการ', '15000');
+INSERT INTO `employee` VALUES ('12', 'ธนาคาร', 'โรงพยาบาล', '08-12469211', 'ช่างเครื่องช่างเครื่อง', '10000');
+INSERT INTO `employee` VALUES ('15', 'ณเดช คุกกี้มั้ยจ๊ะ', 'ระนอง', '08-61340997', 'ผู้ดูแลระบบ', '9000');
+INSERT INTO `employee` VALUES ('16', 'สมหมาย จงดี', 'ระนอง', '08-54210056', 'ผู้ดูแลบัญชี', '9000');
+
+DROP TABLE IF EXISTS `orders`;
+CREATE TABLE `orders` (
+  `Job_Id` int(11) NOT NULL,
+  `Job_Name` varchar(255) DEFAULT NULL,
+  `Job_Class` varchar(255) DEFAULT NULL,
+  `Job_Num` int(11) DEFAULT NULL,
+  `Job_Size` varchar(255) DEFAULT NULL,
+  `Job_Price` decimal(19,4) DEFAULT NULL,
+  `Job_Date` datetime DEFAULT NULL,
+  `Job_Sent` datetime DEFAULT NULL,
+  `Job_Script` varchar(255) DEFAULT NULL,
+  `Cus_Id` int(11) DEFAULT NULL,
+  `Emp_Id` int(11) DEFAULT NULL,
+  `Job_Status` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Job_Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `orders` VALUES ('1', 'ป้ายน้ำมันเครื่อง Fast Fast', 'ไวนิล', '11', '0.50x0.50', '550.0000', '2015-04-16 00:00:00', '2015-03-16 00:00:00', '', '4', '10', 'ชำระแล้ว');
+INSERT INTO `orders` VALUES ('2', 'สติ๊กเกอร์ PVC', 'สติ๊กเกอร์ PVC', '1', '1x1', '550.0000', '2015-04-16 00:00:00', '2015-03-16 00:00:00', '', '6', '10', 'ชำระแล้ว');
+INSERT INTO `orders` VALUES ('3', 'ป้ายไวนิล น้ำมันตราแมว', 'ไวนิล', '1', '1x1', '200.0000', '2015-04-16 00:00:00', '2015-03-16 00:00:00', '', '4', '10', 'ค้างชำระ');
+INSERT INTO `orders` VALUES ('4', '1111', 'สติ๊กเกอร์ PVC', '1', '1x1', '550.0000', '2015-03-20 00:00:00', '2015-03-19 00:00:00', '', '4', '10', 'ชำระแล้ว');
+INSERT INTO `orders` VALUES ('5', 'เรียบร้อย ใสๆ', 'สติ๊กเกอร์ PVC', '1', '1x1', '550.0000', '2015-03-20 00:00:00', '2015-03-20 00:00:00', '', '4', '10', 'ค้างชำระ');
+INSERT INTO `orders` VALUES ('6', 'รูปดอกกล้วยไม้', 'สติ๊กเกอร์ซีทรู', '1', '1x1', '800.0000', '2015-04-16 00:00:00', '2015-03-16 00:00:00', '', '8', '10', 'ชำระแล้ว');
+INSERT INTO `orders` VALUES ('7', 'ป้ายบอกทาง', 'ไวนิล', '1', '0.50x0.50', '50.0000', '2015-03-30 00:00:00', '2015-03-31 00:00:00', 'สี่เหลี่ยม ลูกศรทางซ้าย พื้นขาว ตัวแดง', '8', '10', 'ค้างชำระ');
+INSERT INTO `orders` VALUES ('8', 'ป้ายจราจร', 'ไวนิล', '1', '1x1', '200.0000', '2015-03-30 00:00:00', '2015-03-31 00:00:00', 'ลูกศรด้านขวา พื้นขาว ตัวแดง', '8', '10', 'ค้างชำระ');
+INSERT INTO `orders` VALUES ('9', 'เทศบาลเมืองระนอง', 'สติ๊กเกอร์ไดคัท', '2', '2x3', '6600.0000', '2015-04-16 00:00:00', '2015-03-16 00:00:00', '', '9', '10', 'ชำระแล้ว');
+INSERT INTO `orders` VALUES ('10', 'ป้ายดอกกุหลาบ', 'ไวนิล', '1', '1x1', '200.0000', '2015-04-16 00:00:00', '2015-03-16 00:00:00', '', '10', '16', 'ค้างชำระ');
+INSERT INTO `orders` VALUES ('11', 'ตุ๊กตาบาบี้', 'สติ๊กเกอร์ซีทรู', '2', '2x2', '6400.0000', '2015-04-16 00:00:00', '2015-03-16 00:00:00', '', '11', '16', 'ชำระแล้ว');
+INSERT INTO `orders` VALUES ('12', 'กราฟฟิค', 'สติ๊กเกอร์ฝ้า', '2', '3x2', '6600.0000', '2015-04-16 00:00:00', '2015-03-16 00:00:00', '', '11', '16', 'ชำระแล้ว');
+INSERT INTO `orders` VALUES ('13', '11111', 'สติ๊กเกอร์ฝ้า', '1', '2x2', '1100.0000', '2015-04-16 00:00:00', '2015-03-16 00:00:00', '', '11', '10', 'มัดจำ 50% ');
+
+
+DROP TABLE IF EXISTS `usertable`;
+CREATE TABLE `usertable` (
+  `User_Id` int(11) NOT NULL,
+  `UserName` varchar(255) NOT NULL,
+  `Password` varchar(255) DEFAULT NULL,
+  `UserLevel` varchar(255) DEFAULT NULL,
+  `Emp_Id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`User_Id`,`UserName`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `usertable` VALUES ('1', 'admin', '1234', 'ผู้ดูแลระบบ', '11');
+INSERT INTO `usertable` VALUES ('2', 'employee', '1234', 'พนักงาน', '10');
+INSERT INTO `usertable` VALUES ('3', 'owner', '1234', 'เจ้าของกิจการ', '9');
+INSERT INTO `usertable` VALUES ('4', 'sommy', '1234', 'พนักงาน', '16');

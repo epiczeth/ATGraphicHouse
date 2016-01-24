@@ -1,0 +1,12 @@
+D:\Customer2\VB Project\dbInstaller\bin\Debug\dbInstaller.exe.config
+D:\Customer2\VB Project\dbInstaller\bin\Debug\dbInstaller.exe
+D:\Customer2\VB Project\dbInstaller\bin\Debug\dbInstaller.pdb
+D:\Customer2\VB Project\dbInstaller\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Customer2\VB Project\dbInstaller\bin\Debug\MySql.Data.dll
+D:\Customer2\VB Project\dbInstaller\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+D:\Customer2\VB Project\dbInstaller\obj\Debug\dbInstaller.csprojResolveAssemblyReference.cache
+D:\Customer2\VB Project\dbInstaller\obj\Debug\dbInstaller.FrmMain.resources
+D:\Customer2\VB Project\dbInstaller\obj\Debug\dbInstaller.Properties.Resources.resources
+D:\Customer2\VB Project\dbInstaller\obj\Debug\dbInstaller.csproj.GenerateResource.Cache
+D:\Customer2\VB Project\dbInstaller\obj\Debug\dbInstaller.exe
+D:\Customer2\VB Project\dbInstaller\obj\Debug\dbInstaller.pdb

@@ -1,0 +1,11 @@
+C:\Users\Epic\Desktop\Customer2\VB Project\dbInstaller\bin\Release\dbInstaller.exe.config
+C:\Users\Epic\Desktop\Customer2\VB Project\dbInstaller\bin\Release\dbInstaller.exe
+C:\Users\Epic\Desktop\Customer2\VB Project\dbInstaller\bin\Release\dbInstaller.pdb
+C:\Users\Epic\Desktop\Customer2\VB Project\dbInstaller\obj\Release\dbInstaller.FrmMain.resources
+C:\Users\Epic\Desktop\Customer2\VB Project\dbInstaller\obj\Release\dbInstaller.Properties.Resources.resources
+C:\Users\Epic\Desktop\Customer2\VB Project\dbInstaller\obj\Release\dbInstaller.csproj.GenerateResource.Cache
+C:\Users\Epic\Desktop\Customer2\VB Project\dbInstaller\obj\Release\dbInstaller.exe
+C:\Users\Epic\Desktop\Customer2\VB Project\dbInstaller\obj\Release\dbInstaller.pdb
+D:\Customer2\VB Project\dbInstaller\bin\Release\dbInstaller.exe.config
+D:\Customer2\VB Project\dbInstaller\obj\Release\dbInstaller.exe
+D:\Customer2\VB Project\dbInstaller\obj\Release\dbInstaller.pdb

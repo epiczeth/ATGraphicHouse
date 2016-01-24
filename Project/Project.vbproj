@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14D7AD20-C80F-4B89-AC96-000462067792}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Project.My.MyApplication</StartupObject>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Project.xml</DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Project.xml</DocumentationFile>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>database_mysql.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Zeth">
+      <HintPath>C:\Users\Epic\Documents\Visual Studio 2012\Projects\Zeth\Zeth\bin\Release\Zeth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Web" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllClasses\DBConnect.vb" />
+    <Compile Include="AllClasses\IniUtil.vb" />
+    <Compile Include="AllClasses\SimulateIsNumeric.vb" />
+    <Compile Include="AllDatasets\dsMonth.Designer.vb">
+      <DependentUpon>dsMonth.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AllDatasets\dsNewJob.Designer.vb">
+      <DependentUpon>dsNewJob.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AllDatasets\dsOrder.Designer.vb">
+      <DependentUpon>dsOrder.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AllDatasets\dsReDay.Designer.vb">
+      <DependentUpon>dsReDay.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AllDatasets\dsReDay.vb">
+      <DependentUpon>dsReDay.xsd</DependentUpon>
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="AllDatasets\dsReYear.Designer.vb">
+      <DependentUpon>dsReYear.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AllDatasets\dsReYear.vb">
+      <DependentUpon>dsReYear.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AllDatasets\dsUnpaid.Designer.vb">
+      <DependentUpon>dsUnpaid.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AllForms\Customer.Designer.vb">
+      <DependentUpon>Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Customer.vb">
+      <CustomToolNamespace>My.Resources.Resources</CustomToolNamespace>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Customer1.Designer.vb">
+      <DependentUpon>Customer.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AllForms\CustomerJob.Designer.vb">
+      <DependentUpon>CustomerJob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\CustomerJob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Employees.Designer.vb">
+      <DependentUpon>Employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Employees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\frmBill.Designer.vb">
+      <DependentUpon>frmBill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\frmBill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\frmBillList.Designer.vb">
+      <DependentUpon>frmBillList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\frmBillList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\frmOrder.Designer.vb">
+      <DependentUpon>frmOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\frmOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\mySqlSetting.Designer.vb">
+      <DependentUpon>mySqlSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\mySqlSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\reportday.Designer.vb">
+      <DependentUpon>reportday.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\reportday.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\ReportJob.Designer.vb">
+      <DependentUpon>ReportJob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\ReportJob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\reportMonth.Designer.vb">
+      <DependentUpon>reportMonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\reportMonth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\reportUnpaid.Designer.vb">
+      <DependentUpon>reportUnpaid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\reportUnpaid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\reportYear.Designer.vb">
+      <DependentUpon>reportYear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\reportYear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllForms\UserForm.Designer.vb">
+      <DependentUpon>UserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllForms\UserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AllForms\Customer.resx">
+      <DependentUpon>Customer.vb</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Customer1.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\CustomerJob.en-US.resx">
+      <DependentUpon>CustomerJob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\CustomerJob.resx">
+      <DependentUpon>CustomerJob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Employees.resx">
+      <DependentUpon>Employees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\frmBill.resx">
+      <DependentUpon>frmBill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\frmBillList.resx">
+      <DependentUpon>frmBillList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\frmOrder.resx">
+      <DependentUpon>frmOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\mySqlSetting.resx">
+      <DependentUpon>mySqlSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\reportday.resx">
+      <DependentUpon>reportday.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\ReportJob.resx">
+      <DependentUpon>ReportJob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\reportMonth.resx">
+      <DependentUpon>reportMonth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\reportUnpaid.resx">
+      <DependentUpon>reportUnpaid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\reportYear.resx">
+      <DependentUpon>reportYear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllForms\UserForm.resx">
+      <DependentUpon>UserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>Project.My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\repBilling.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\repOrder.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\repReDay.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\repReMonth.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\repReYear.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\repUnpaid.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AllDatasets\dsMonth.xsc">
+      <DependentUpon>dsMonth.xsd</DependentUpon>
+    </None>
+    <None Include="AllDatasets\dsMonth.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMonth.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AllDatasets\dsMonth.xss">
+      <DependentUpon>dsMonth.xsd</DependentUpon>
+    </None>
+    <None Include="AllDatasets\dsNewJob.xsc">
+      <DependentUpon>dsNewJob.xsd</DependentUpon>
+    </None>
+    <None Include="AllDatasets\dsNewJob.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsNewJob.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AllDatasets\dsNewJob.xss">
+      <DependentUpon>dsNewJob.xsd</DependentUpon>
+    </None>
+    <None Include="AllDatasets\dsOrder.xsc">
+      <DependentUpon>dsOrder.xsd</DependentUpon>
+    </None>
+    <None Include="AllDatasets\dsOrder.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrder.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AllDatasets\dsOrder.xss">
+      <DependentUpon>dsOrder.xsd</DependentUpon>
+    </None>
+    <None Include="AllDatasets\dsReDay.xsc">
+      <DependentUpon>dsReDay.xsd</DependentUpon>
+    </None>
+    <None Include="AllDatasets\dsReDay.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReDay.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AllDatasets\dsReDay.xss">
+      <DependentUpon>dsReDay.xsd</DependentUpon>
+    </None>
+    <None Include="AllDatasets\dsReYear.xsc">
+      <DependentUpon>dsReYear.xsd</DependentUpon>
+    </None>
+    <None Include="AllDatasets\dsReYear.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReYear.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AllDatasets\dsReYear.xss">
+      <DependentUpon>dsReYear.xsd</DependentUpon>
+    </None>
+    <None Include="AllDatasets\dsUnpaid.xsc">
+      <DependentUpon>dsUnpaid.xsd</DependentUpon>
+    </None>
+    <None Include="AllDatasets\dsUnpaid.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUnpaid.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AllDatasets\dsUnpaid.xss">
+      <DependentUpon>dsUnpaid.xsd</DependentUpon>
+    </None>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-Search-And-Replace-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document-Write-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ModernXP-07-Keys-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Group-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="database_mysql.ico" />
+    <Content Include="Resources\1431387294_vector_66_01.ico" />
+    <None Include="Resources\administrative_tools.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

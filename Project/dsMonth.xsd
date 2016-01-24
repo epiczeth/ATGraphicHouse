@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsMonth" targetNamespace="http://tempuri.org/dsMonth.xsd" xmlns:mstns="http://tempuri.org/dsMonth.xsd" xmlns="http://tempuri.org/dsMonth.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Database5ConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database5ConnectionString1 (MySettings)" PropertyReference="ApplicationSettings.My.MySettings.GlobalReference.Default.Database5ConnectionString1" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (MySettings)" PropertyReference="ApplicationSettings.My.MySettings.GlobalReference.Default.ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsMonth" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsMonth" msprop:Generator_UserDSName="dsMonth">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtMonth" msprop:Generator_TableClassName="dtMonthDataTable" msprop:Generator_TableVarName="tabledtMonth" msprop:Generator_TablePropName="dtMonth" msprop:Generator_RowDeletingName="dtMonthRowDeleting" msprop:Generator_RowChangingName="dtMonthRowChanging" msprop:Generator_RowEvHandlerName="dtMonthRowChangeEventHandler" msprop:Generator_RowDeletedName="dtMonthRowDeleted" msprop:Generator_UserTableName="dtMonth" msprop:Generator_RowChangedName="dtMonthRowChanged" msprop:Generator_RowEvArgName="dtMonthRowChangeEvent" msprop:Generator_RowClassName="dtMonthRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Job_Id" msprop:Generator_ColumnVarNameInTable="columnJob_Id" msprop:Generator_ColumnPropNameInRow="Job_Id" msprop:Generator_ColumnPropNameInTable="Job_IdColumn" msprop:Generator_UserColumnName="Job_Id" type="xs:string" minOccurs="0" />
+              <xs:element name="Cus_Name" msprop:Generator_ColumnVarNameInTable="columnCus_Name" msprop:Generator_ColumnPropNameInRow="Cus_Name" msprop:Generator_ColumnPropNameInTable="Cus_NameColumn" msprop:Generator_UserColumnName="Cus_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Job_Name" msprop:Generator_ColumnVarNameInTable="columnJob_Name" msprop:Generator_ColumnPropNameInRow="Job_Name" msprop:Generator_ColumnPropNameInTable="Job_NameColumn" msprop:Generator_UserColumnName="Job_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Job_Date" msprop:Generator_ColumnVarNameInTable="columnJob_Date" msprop:Generator_ColumnPropNameInRow="Job_Date" msprop:Generator_ColumnPropNameInTable="Job_DateColumn" msprop:Generator_UserColumnName="Job_Date" type="xs:string" minOccurs="0" />
+              <xs:element name="Job_Sent" msprop:Generator_ColumnVarNameInTable="columnJob_Sent" msprop:Generator_ColumnPropNameInRow="Job_Sent" msprop:Generator_ColumnPropNameInTable="Job_SentColumn" msprop:Generator_UserColumnName="Job_Sent" type="xs:string" minOccurs="0" />
+              <xs:element name="Job_Price" msprop:Generator_ColumnVarNameInTable="columnJob_Price" msprop:Generator_ColumnPropNameInRow="Job_Price" msprop:Generator_ColumnPropNameInTable="Job_PriceColumn" msprop:Generator_UserColumnName="Job_Price" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
